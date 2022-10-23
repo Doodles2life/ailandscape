@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap');
+
+
+/* ----------------------------Common CSS Start--------------------------------- */
+*{
+   box-sizing: border-box;
+}
+body{
+   margin-top:40px;
+   margin-bottom:40px;
+}
+a{
+   text-decoration: none;
+   color:black
+}
+a:hover{
+   color: black;
+}
+
+h4.category-title {
+   color: white;
+   margin: 10px 0px;
+}
+.category-info{
+   color:white;
+   text-transform: uppercase;
+   font-size: 15px;
+   text-align: left;
+   letter-spacing: .1em;
+   word-spacing: .6em;
+   font-family: 'Ubuntu Mono', monospace;
+}
+.subcategory {
+   display: flex;
+   padding:10px 0px;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 10px;
+   background-color: white;
+}
+.subcategory-title{
+   color: rgb(73, 73, 73);
+   font-size: 14px;
+   font-weight: 600;
+   text-transform: uppercase;
+
+}
+
+.single-logo{
+   padding: 10px 0px;
+}
+.single-logo a{
+   display: flex;
+   position: relative;
+   align-items: center;
+   justify-content: center;
+}
+.single-logo a img{
+   height:30px;
+}
+p.to-come{
+   color: rgb(73, 73, 73);
+   margin-bottom: 5px;
+}
+
+
+/* ------------------------Common CSS End-------------------------*/
+
+
+/* ----------------Info box-1 section CSS Star-----------------*/
+
+/* ---------------Text Category-------------- */
+.text-category{
+   background:#1f8ac4;
+   border:5px solid white;
+}
+
+/* Marketing Sub-category*/
+
+.subcategory.marketing {
+   border-right: 5px solid white;
+}
+
+.marketing-logos,.g-writing-logos{
+   display: grid;
+   grid-template-columns: auto auto;
+   grid-column-gap: 30px;
+}
+
+
+/* Knowledge Sub-category*/
+.subcategory.knowledge {
+   padding: 5px 0px;
+}
+
+.knowledge-logos .single-logo {
+   height: 40px;
+}
+
+
+/* G-writing Sub-category*/
+.subcategory.g-writing {
+   padding: 20px 0px;
+}
+
+
+
+/* Support Sub-category*/
+.subcategory.support .to-come {
+   margin: 23px 0px;
+}
+
+
+
+/* ----------------Info box-1 section CSS End-----------------*/
+
+/* video-category */
+.video-category{
+   background-color: #f5571c;
+   border:5px solid white;
+}
+
+
+/* Personalize video Sub-category*/
+.subcategory.personalized-video {
+   padding: 20px 0px;
+}
+
+
+ /* info-2 */
+
+
+/* image-generation */
+.image-category{
+   border:5px solid white;
+   background:#eb2926
+}
+.subcategory.img-generation {
+   padding: 25px 0px;
+}
+.subcategory.advertising{
+   padding-bottom: 0px;
+}
+p.salt {
+   font-size: 30px;
+   font-weight: bold;
+   margin-bottom: 0px;
+   line-height: 1.2em;
+}
+
+/* 3d category */
+.three-3d-category{
+   background:#e8599e;
+   border:5px solid white;
+}
+
+.subcategory.three-3d .subcategory-title {
+   margin: 0px;
+}
+
+
+
+/* Code category */
+.code-category{
+   background-color: #00a071;
+   border:5px solid white;
+}
+.code-logos{
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.subcategory.sql {
+   padding: 20px 0px 50px 0px;
+}
+
+
+
+
+/* Speech Category */
+.speech-category{
+   background: #fab23b;
+   border:5px solid white;
+}
+.wellsaid-logo{
+   height:23px !important;
+}
+.subcategory.voice {
+   padding: 36px 0px;
+}
+
+/* Other Category */
+
+.other-category{
+   background-color: #928c86;
+   border:5px solid white;
+}
+.half-width {
+   width: 50% !important;
+}
+.subcategory.gaming {
+   padding-bottom: 25px;
+}
+
+.subcategory.rpa {
+   padding-bottom: 25px;
+}
+.subcategory.music {
+   padding-top:12px;
+   padding-bottom: 0px;
+}
+
+.subcategory.audio {
+   padding-top:12px;
+   padding-bottom: 0px;
+}
+
+.subcategory.biology-chemistry {
+   padding-top:14px;
+   padding-bottom: 0px;
+}
+
+
+
+@media only screen and (max-width: 1020px) {  
+   .marketing-logos,.g-writing-logos{
+      grid-column-gap: 10px;
+   }
+   .composer-ai{
+      width: 155px;
+   }
+   .lavender{
+      width:150px
+   }
+ }
+
+ /* Responsiveness for tabs */
+ @media only screen and (max-width: 820px) {
+   .personalized-video-logos {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+  }
+   .subcategory.knowledge {
+      padding: 15px 0px;
+   }
+
+   .subcategory.g-writing {
+      padding: 20px 0px 40px 0px;
+   }
+
+   .subcategory.img-generation {
+      padding: 10px 0px 54px 0px;
+   }
+}
+
+
+/* Responsiveness for Mobile */
+@media only screen and (max-width: 420px) {
+   .marketing-logos, .g-writing-logos {
+      grid-column-gap: 30px;
+  }
+   .subcategory.knowledge {
+      padding: 15px 0px;
+   }
+   
+   .subcategory.g-writing {
+      padding: 20px 0px 40px 0px;
+   }
+   
+   .subcategory.img-generation {
+      padding: 10px 0px 54px 0px;
+   }
+   
+   .knowledge-logos, .sales-logos, .other-logos, .advertising-logos, .design-logos, .documentation-logos, .web-app-logos{
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+   }
+   .personalized-video-logos{
+      display: grid;
+      grid-template-columns: auto auto;
+   }
+   .code-logos{
+      flex-direction: column;
+   }
+   .half-width {
+      width: 100% !important;
+   }
+}
